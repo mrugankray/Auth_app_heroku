@@ -5,6 +5,8 @@
       <li class='list-group-item'>Username: {{user.username}}</li>
       <li class='list-group-item'>Email: {{user.email}}</li>
     </ul>
-    <ul *ngIf='!user'>Loading please wait.....</ul>
+    <ul>
+      <li *ngIf='!user' class='list-group-item'>Loading please wait.....</li>
+    </ul>
   </div>
 </div>
