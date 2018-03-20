@@ -511,7 +511,7 @@ module.exports = ""
 /***/ "./src/app/component/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf='user'>\n  <div>\n    <h2 class='page-header'>Name: {{user.name}}</h2>\n    <ul>\n      <li class='list-group-item'>Username: {{user.username}}</li>\n      <li class='list-group-item'>Email: {{user.email}}</li>\n    </ul>\n    <ul>\n      <li *ngIf='!user' class='list-group-item'>Loading please wait.....</li>\n    </ul>\n  </div>\n</div>\n"
+module.exports = "<div *ngIf='user'>\n  <div>\n    <h2 class='page-header'>Name: {{user.name}}</h2>\n    <ul>\n      <li class='list-group-item'>Username: {{user.username}}</li>\n      <li class='list-group-item'>Email: {{user.email}}</li>\n    </ul>\n    <ul *ngIf='!user' >\n      <li class='list-group-item'>Loading please wait.....</li>\n    </ul>\n  </div>\n</div>\n"
 
 /***/ }),
 
